@@ -1,0 +1,12 @@
+from cv2 import *
+cam_port = 0
+cam = VideoCapture(cam_port)
+result.image = cam.read()
+if result:
+    imshow("photo", image)
+    imwrite("phto", image)
+    waitKey(0)
+    destroyWindow("photo")
+    
+else:
+    print("no image")
